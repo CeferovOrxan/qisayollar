@@ -28,9 +28,9 @@ istifadeciadi = input("Istifadeci Adi Fayl Yolu: ")
 sifreler = input("Sifrelerin Oldugu Faylin Yolu: ")
 
 if(sayino=="1"):
-        os.system("nrack -p 21 -u " + istifadeciadi + " -P " + sifreler + " " + hedefIP)
+        os.system("ncrack -p 21 -u " + istifadeciadi + " -P " + sifreler + " " + hedefIP)
 elif(sayino=="2"):
-        os.system("nrack -p 21 -u " + istifadeciadi + " -P " + sifreler + " " + hedefIP)
+        os.system("ncrack -p 21 -u " + istifadeciadi + " -P " + sifreler + " " + hedefIP)
 elif(sayino=="3"):
         os.system("hydra -L " + istifadeciadi + " -P " + sifreler + " " + hedefIP + "telnet")
 else:
